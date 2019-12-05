@@ -1,0 +1,4 @@
+build_image:
+  script:
+    - docker build --build-arg GOPROXY=https://mirrors.aliyun.com/goproxy/ -t hub.fxt.cn/rank-archive -f Dockerfile .
+    - docker push hub.fxt.cn/rank-archive
